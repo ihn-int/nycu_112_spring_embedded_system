@@ -19,5 +19,8 @@ The other test is for image display. Here I let the screen display the qrcode, b
 A simple animation is displayed with Raspberry Pi.
 > check "bad_apple_time_fixed.py"
 
-Same as Uno, there is also a text display on RPi.
-> check "write.py"
+### tools
+
+The "tools" folder only contains some files that I used to create the animation file. 
+
+Hereby declare: "pgm2int.c" file is modified from "ppm2mem.c", which was used in DLab class in NYCU.

@@ -1,29 +1,32 @@
 # About LedControl.py
-> I haven't search someone else do it, so I did.
 
-The bulk of code and usage is referenced from "LedControl.cpp" in Arduino. But no seven-segment part is implemented.
+This work is under the result of "LedControl.cpp" in Arudino, without supports of seven-segment.
 
-You'll need to install spidev to use this module on Raspberry pi.
+Original license below:
+```
+LedControl.h - A library for controling Leds with a MAX7219/MAX7221
+Copyright (c) 2007-2015 Eberhard Fahle
 
-## For Raspberry Pi
-Download "LedControl.py" to use led matrix drived by MAX7219.
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
 
-## For Arduino type
-Download "LedControl.h" library with Arduino IDE.
+This permission notice shall be included in all copies or 
+substantial portions of the Software.
 
-frame.py is NOT a necessary file but a function library for myself to complete the project.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+```
 
-## API list
-
-class LedControl
-- LedControl(bus=0, device=0,numDevice=1) -> None
-  - bus: which spi bus to use
-  - device: while slave to use
-- getDeviceCount() -> int
-- shutdown(addr, value) -> None
-  - addr: which matrix to shutdown
-  - value: decide whether turn on or off
-- setIntensity(addr, value) -> None
-  - addr: which matrix to set intensity
-  - value: the intensity value
-- 
+This library assumes spidev package is installed in the environment.Most of the function name or usage are similar to those in Arduino.
