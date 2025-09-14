@@ -6,6 +6,8 @@ Motivation:
 - VNC Monitor and HDMI are powerful, but too complicate.
 => Let's make a simple monitor!
 
+You can view the slide on canva: [link](https://www.canva.com/design/DAGHPiue09A/7R70EwWCocQlMR6vInIa6A/edit?utm_content=DAGHPiue09A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton), which contains the demo videos.
+
 ## Content
 
 ### On Arduino Uno
